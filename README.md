@@ -6,16 +6,16 @@
 
 • `npm install --save-dev @types/express @types/node ts-node tsconfig-paths typescript nodemon` - встановлення типів для бібліотек;
 
-• налаштувати tsconfig.json (див конспект);
+• налаштувати `tsconfig.json` (див конспект);
 
-• створення nodemon.json
+• створення `nodemon.json`
 {
 "watch": ["src"],
 "ext": "ts",
 "exec": "ts-node -r tsconfig-paths/register src/main.ts"
 };
 
-• додати кілька скриптів у package.json
+• додати кілька скриптів у `package.json`
 "scripts": {
 "start": "node -r tsconfig-paths/register ./dist/main.js",
 "dev": "nodemon",
