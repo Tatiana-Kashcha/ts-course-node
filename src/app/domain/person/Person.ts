@@ -41,7 +41,7 @@ export default class Person {
     return new ApiResponse(true, person);
   }
 
-  // @Post() // оновлюємо метод !!
+  // @Post() // оновлюємо ініціалізований метод !!
   // async setPerson(@Body() body: IPerson) {
   //   storeData.push(body);
 
